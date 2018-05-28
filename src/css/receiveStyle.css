@@ -1,0 +1,381 @@
+[v-cloak] {
+	  display: none;
+	}
+	
+	.receive-wrap{
+		/*overflow:scroll;*/
+		/*overflow-y:hidden;*/
+		width:7.5rem;
+		height:13.32rem;
+
+		/*max-width: 10.24rem;*/
+		max-height:13.32rem;
+		background:url('../../src/assets/bggOne.jpg') left top;
+		background-repeat: repeat-y;
+		background-size:100%;
+		/*background-attachment: fixed;*/
+		/*overflow:hidden;*/
+		text-align:center;
+		display:flex;
+		align-items:center;
+		margin:0 auto;
+		position:relative;
+	}
+
+	/*用户是否关注弹框按钮*/
+
+		/*背景部分*/
+	.receive-follow-popBg{
+		width:100%;
+		height:100%;
+		position:absolute;
+		background:rgba(0,0,0,0.5);
+		z-index:99;
+	}
+	/*弹框盒子*/
+	.receive-follow-popBox{
+		position:absolute;
+		width:6.3rem;
+		height:3.4rem;
+		background:#fff;
+		border-radius:20px;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		margin:auto;
+		z-index:999;
+	}
+	/*弹框文字*/
+	.receive-follow-text{
+		font-size:0.3rem;
+		color:#414141;
+		text-align:center;
+		margin-top:1rem;
+	}
+	/*弹框按钮统一清除样式部分*/
+	.receive-follow-popBox button{
+		outline:none;
+		width:2.1rem;
+		height:0.78rem;
+		font-size:0.3rem;
+		border-radius:0.14rem;
+		margin-top:0.65rem;
+	}
+	/*关注按钮部分*/
+	.receive-follow-true{
+		outline:none;
+		width:2.1rem;
+		height:0.78rem;
+		font-size:0.3rem;
+		border-radius:0.14rem;
+		margin-top:0.65rem;
+		border:none;
+		border:2px solid black;
+		background:black;
+		color:#fff;
+	}
+
+	/*中间部分*/
+	.receive-bg{
+		width:6.72rem;
+		height:91%;
+		/*width:670px;
+		height:1220px;*/
+		background-size:6.74rem 12.14rem;
+		/*position: fixed;*/
+	    top: 0px;
+	    left: 0px;
+	    right: 0px;
+	    bottom: 0px;
+	    margin: auto;
+	    /*display: flex;
+		justify-content: center;*/
+		/*align-items: center; */
+	}
+	/*中间内容部分*/
+
+	/*头部div  图片部分*/
+	.receive-header-img-box{
+		width:100%;
+		height:4rem;
+		position:relative;
+	}
+	.receive-logo{
+		display:block;
+		width:4.9rem;
+		height:2.46rem;
+		margin:0 auto;
+		position: absolute;  
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0; 
+        margin: auto;
+	}
+
+
+	/*中间div  手机号部分*/
+	.receive-verification{
+		width:100%;
+		height:3.32rem;
+		position:relative;
+	}
+
+	/*手机输入框部分*/
+	.receive-ipt{
+		box-sizing:border-box;
+		width:5.8rem;
+		height:0.8rem;
+		border:1px solid #fff;
+		border-radius:6px;
+		font-size:0.32rem;
+		padding-left:0.12rem;
+		letter-spacing:0.02rem;
+		color:#b8b8b8;
+		background-color:transparent;
+		/*margin-top:0.15rem;*/
+	}
+
+	/*输入框聚焦发光*/
+	input:focus{
+
+		outline: none;
+        /*border-color: #9ecaed;
+        box-shadow: 0 0 10px #9ecaed;*/
+	}  
+	/*验证码输入框部分*/
+
+
+	.receive-vfCode-box{
+		width:5.8rem;
+		margin:0 auto;
+		margin-top:0.6rem;
+		display:flex;
+		justify-content:space-between;
+	}
+
+	.receive-ipt2{
+		box-sizing:border-box;
+		width:3.3rem;
+		height:0.8rem;
+		border:1px solid #fff;
+		border-radius:6px;
+		font-size:0.32rem;
+		background-color:transparent;
+		padding-left:0.12rem;
+		/*display:inline-block;*/
+		letter-spacing:0.02rem;
+		color:#b8b8b8;
+	}
+
+	/*验证码按钮部分*/
+	.receive-sp{
+		/*list-style-type:none;*/
+		border:none;
+		outline:none;
+		box-sizing:border-box;
+		display:inline-block;
+		width:2.2rem;
+		height:0.8rem;
+		background-color:#ead200;
+		font-size:0.32rem;
+		color:#262626;
+		border-radius:6px;
+		line-height:0.8rem;
+	}
+
+
+
+	/*验证弹窗部分*/
+
+	.receive-popups-box{
+		width:2.6rem;
+		height:2rem;
+		background-color:black;
+		background:rgba(0,0,0,0.5);
+		border-radius:0.2rem;
+		display:inline-block;
+		position:absolute;
+		top:0.64rem;
+		left:0;
+		right:0;
+		margin:auto;
+		z-index:99;
+		padding-top:0.2rem;
+		box-sizing: border-box;
+		visibility:hidden;
+		opacity:0.5;
+		-webkit-transition:all 0.5s ease-in;
+   		-moz-transition:all 0.5s ease-in;
+   		-ms-transition:all 0.5s ease-in;
+   		-o-transition:all 0.5s ease-in;
+   		transition:all 0.5s ease-in;
+		/*display:none;*/
+	}
+
+	
+	/*验证码错误弹窗部分*/
+	.receive-popups-error-box{
+		width:2.6rem;
+		height:2rem;
+		background-color:black;
+		background:rgba(0,0,0,0.5);
+		border-radius:0.2rem;
+		display:inline-block;
+		position:absolute;
+		top:0.64rem;
+		left:0;
+		right:0;
+		margin:auto;
+		z-index:99;
+		padding-top:0.2rem;
+		box-sizing: border-box;
+		visibility:hidden;
+		opacity:0.5;
+		-webkit-transition:all 0.5s ease-in;
+   		-moz-transition:all 0.5s ease-in;
+   		-ms-transition:all 0.5s ease-in;
+   		-o-transition:all 0.5s ease-in;
+   		transition:all 0.5s ease-in;
+		/*display:none;*/
+	}
+
+	/*手机输入错误 弹窗部分*/
+	.receive-popups-box2{
+		width:4.2rem;
+		height:2rem;
+		background-color:black;
+		background:rgba(0,0,0,0.5);
+		border-radius:0.2rem;
+		display:inline-block;
+		position:absolute;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		margin:auto;
+		z-index:99;
+		padding-top:0.2rem;
+		box-sizing: border-box;
+		visibility:hidden;
+		opacity:0.5;
+		-webkit-transition:all 0.5s ease-in;
+   		-moz-transition:all 0.5s ease-in;
+   		-ms-transition:all 0.5s ease-in;
+   		-o-transition:all 0.5s ease-in;
+   		transition:all 0.5s ease-in;
+		/*display:none;*/
+	}
+
+	.receive-successful-logo{
+		width:0.8rem;
+		height:0.8rem;
+		z-index:999;
+		position:absolute;
+		top:0.3rem;
+		left:0;
+		right:0;
+		margin:auto;
+	}
+
+	.receive-popups-text{
+		font-size:0.27rem;
+		color:#fff;
+		position:absolute;
+		bottom:0.32rem;
+		left:0;
+		right:0;
+		letter-spacing:1px;
+	}
+
+
+
+	/*placeholder样式部分*/
+	input::-webkit-input-placeholder{ /*WebKit browsers*/
+		color: #999;
+		letter-spacing:1px;
+	}
+	input::-moz-input-placeholder{ /*Mozilla Firefox*/
+		color: #999;
+		letter-spacing:1px;
+	}
+	input::-ms-input-placeholder{ /*Internet Explorer*/ 
+		color: #999;
+		letter-spacing:1px;
+	}
+
+
+	/*底部部分*/
+	.receive-foot-box{
+		width:100%;
+		height:4.88rem;
+		/*display:flex;
+		justify-content:space-around;*/
+		box-sizing:border-box;
+		padding-top:0.35rem;
+		position:relative;
+	}
+	.receive-box{
+		width:5.8rem;
+		margin:0 auto;
+		/*height:0.15rem;*/
+		/*margin-top:-0.35rem;*/
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+	}
+	.receive-rule-text{
+		font-size:0.3rem;
+		color:#e5e5e5;
+	}
+	/*领取规则介绍文字部分*/
+	.receive-introduce-text{
+		width:5.8rem;
+		height:2rem;
+		overflow:auto;
+		font-size:0.24rem;
+		color:#e5e5e5;
+		margin:0 auto;
+		margin-top:0.1rem;
+		line-height:0.4rem;
+		letter-spacing:0.03rem;
+		text-align:left;
+	}
+	
+	/*修改滚动条样式*/
+	/*.receive-introduce-text::-webkit-scrollbar{
+		width:6px;
+		height:8px;
+	}
+	.receive-introduce-text::-webkit-scrollbar-thumb{
+		border-radius:10px;
+	}
+	.receive-introduce-text::-webkit-scrollbar-track{
+		border-radius:10px;
+		width:5px;
+	}*/
+
+	/*底部左右图片部分*/
+	.receive-box img{
+		width:2.02rem;
+		height:0.15rem;
+	}
+
+	/*底部按钮部分*/
+	.receive-btn{
+		outline:none;
+		width:4rem;
+		height:0.8rem;
+		background-color:transparent;
+		border:2px solid #ead200;
+		font-size:0.36rem;
+		color:#ead200;
+		border-radius:0.40rem;
+		line-height:0.6rem;
+		position:absolute;
+		margin:auto;
+		left:0;
+		bottom:0.76rem;
+		right:0;
+	}
